@@ -479,12 +479,13 @@ export const App = () => {
           </div>
         )}
 
-      <Gap size={32} />
+        <Gap size={32} />
 
-      <div className={appSt.bottomBtn}>
-        <ButtonMobile loading={loading} block view="primary" onClick={submit}>
-          Подключить
-        </ButtonMobile>
+        <div className={appSt.bottomBtn}>
+          <ButtonMobile loading={loading} block view="primary" onClick={submit}>
+            Подключить
+          </ButtonMobile>
+        </div>
       </div>
     </>
   );
