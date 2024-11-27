@@ -296,15 +296,14 @@ export const App = () => {
                       view="primary-small"
                       style={{marginBottom: 0}}
                   >
-                    "За 4 месяца накопил на новый iPhone, просто следуя
-                    рекомендациям по экономии. Теперь коплю на ноутбук для учебы!"
+                    "Научилась управлять стипендией и подработками. Создала финансовую подушку и теперь увереннее смотрю в будущее."
                   </Typography.Text>
                   <Typography.Text
                       tag="p"
                       view="primary-small"
                       style={{marginBottom: 0}}
                   >
-                    Даня, 16 лет
+                    Алиса, 19 лет
                   </Typography.Text>
                 </div>
               </SwiperSlide>
@@ -322,15 +321,14 @@ export const App = () => {
                       view="primary-small"
                       style={{marginBottom: 0}}
                   >
-                    "За 4 месяца накопил на новый iPhone, просто следуя
-                    рекомендациям по экономии. Теперь коплю на ноутбук для учебы!"
+                    "Всегда думал, что копить сложно. За полгода с сделал себе запас на год вперёд и купил PS5. Родители в шоке!"
                   </Typography.Text>
                   <Typography.Text
                       tag="p"
                       view="primary-small"
                       style={{marginBottom: 0}}
                   >
-                    Даня, 16 лет
+                    Марк, 17 лет
                   </Typography.Text>
                 </div>
               </SwiperSlide>
