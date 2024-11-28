@@ -5,8 +5,7 @@ declare global {
 }
 
 type Payload = {
-  credit_sum: number;
-  credit_period: number;
+  plan_name: string;
 };
 
 export const sendDataToGA = async (payload: Payload) => {
@@ -17,11 +16,11 @@ export const sendDataToGA = async (payload: Payload) => {
     }-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
     await fetch(
-      "https://script.google.com/macros/s/AKfycbxcHgrbrpJDGqapkLM5baYBX40Q4CotD5cxxU-4_mdpm86bxbBXSESz1AkW_G-ubZWb/exec",
+      "https://script.google.com/macros/s/AKfycby_h07g5S0qxxnZEA4IBmOdG9zht1ICSim-p83MCLCGneyEeqAdDSYBvpEMn9lWES9h/exec",
       {
         redirect: "follow",
         method: "POST",
-        body: JSON.stringify({ date, ...payload, variant: "" }),
+        body: JSON.stringify({ date, ...payload, form_name: "form1", variant: "neiro_2" }),
         headers: {
           "Content-Type": "text/plain;charset=utf-8",
         },

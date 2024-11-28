@@ -21,6 +21,7 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import {sendDataToGA} from "./utils/events.ts";
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,10 @@ export const App = () => {
 
   const submit = () => {
     setLoading(true);
-    Promise.resolve().then(() => {
+    sendDataToGA({
+      plan_name:
+          transfer === "self" ? "Старт бесплатно" : "Стандарт 149 руб/мес",
+    }).then(() => {
       LS.setItem(LSKeys.ShowThx, true);
       setThx(true);
       setLoading(false);
