@@ -30,7 +30,9 @@ export const ThxLayout = () => {
       </div>
 
       <div className={appSt.bottomBtnThx}>
-        <ButtonMobile block view="primary" href="https://online.alfabank.ru/">
+        <ButtonMobile block view="primary" onClick={() => {
+window.location.replace("https://online.alfabank.ru");
+}}>
           Вернуться на главный
         </ButtonMobile>
       </div>
